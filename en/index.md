@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ref: index
 lang: en
 ---

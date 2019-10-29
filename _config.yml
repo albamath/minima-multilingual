@@ -1,9 +1,17 @@
+# Site settings
 title: alba~math
 email: alba@albamath.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Alba Marina MÁLAGA SABOGAL
+logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
+author: Alba MÁLAGA
+description: >- # this means to ignore newlines until "show_downloads:"
+  The website alba~math contains a bunch of contributions by Alba Marina Málaga Sabogal. You can find here updates in my research, the modules I develop for scientific outreach and a general discussion on math-related issues in plenty of aspects.
+show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
-  # generate social links in footer
+google_analytics: # a Google Analytics tracking ID
+custom_head: false
+custom_sidebar: false
+custom_footer: false
+  # generate social links in footer (only available in some themes, e.g. minima)
 baseurl: "" # the subpath of the site, e.g. /blog
 url: "" # the base hostname & protocol for the site, e.g. http://example.com
 twitter_username: alba_math

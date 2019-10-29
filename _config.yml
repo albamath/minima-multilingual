@@ -13,7 +13,4 @@ github_username:  albamath
 theme: minima
 
 # Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - LICENSE
-  - README.md
+exclude: README.md

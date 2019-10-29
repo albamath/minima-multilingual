@@ -20,9 +20,10 @@ github_username:  albamath
 #collections
 collections:
   javascript:
-  - output: true
+   output: true
+   permalink: /portfolio/js/:name
   experience:
-  - output: false
+   output: false
 
 # Build settings
 theme: jekyll-theme-minimal

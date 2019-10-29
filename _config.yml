@@ -1,7 +1,7 @@
-﻿title: "alba~math"
+title: alba~math
 email: alba@albamath.com
 description: >- # this means to ignore newlines until "baseurl:"
-  "Alba Marina MÁLAGA SABOGAL"
+  Alba Marina MÁLAGA SABOGAL
 show_excerpts: true # set to true to show excerpts on the homepage
   # generate social links in footer
 baseurl: "" # the subpath of the site, e.g. /blog

@@ -17,6 +17,13 @@ url: "" # the base hostname & protocol for the site, e.g. http://example.com
 twitter_username: alba_math
 github_username:  albamath
 
+#collections
+collections:
+  javascript:
+  - output: true
+  experience:
+  - output: false
+
 # Build settings
 theme: jekyll-theme-minimal
 

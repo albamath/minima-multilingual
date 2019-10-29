@@ -7,8 +7,6 @@ tags: [personal, website, goals]
 lang: en
 ---
 
-# Who am I?
-
 I am a mathematician, I am a maker, I am a mother, I am vegetarian, I am Polish, I am Peruvian, I am French and again I am a mathematician. 
 
 # What is this website?

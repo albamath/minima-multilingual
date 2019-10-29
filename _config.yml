@@ -10,7 +10,7 @@ twitter_username: alba_math
 github_username:  albamath
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 
 # Exclude these files from your production _site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

@@ -7,6 +7,6 @@ tags: [outreach, javascript, portfolio]
 lang: en
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@v0.108.0/examples/js/controls/OrbitControls.js"></script>
+<script src="js/vendor/three/three.min.js"></script>
+<script src="js/vendor/three/OrbitControls.js"></script>
 <script src="js/herwig_hauser_classic_in_three.js"></script>

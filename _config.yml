@@ -5,7 +5,7 @@ logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
 author: Alba MÁLAGA
 description: >- # this means to ignore newlines until "show_downloads:"
   Alba Marina MÁLAGA SABOGAL 
-  - updates in my research, scientific outreach and general discussion on math-related issues.
+  - math research, scientific outreach and general discussion.
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: "" # the subpath of the site, e.g. /blog

@@ -23,7 +23,7 @@ collections:
    output: false
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 
 # Exclude these files from your production _site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

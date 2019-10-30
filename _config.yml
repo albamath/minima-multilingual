@@ -5,24 +5,20 @@ logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
 author: Alba MÁLAGA
 description: >- # this means to ignore newlines until "show_downloads:"
   Alba Marina MÁLAGA SABOGAL 
-  : Updates in my research, scientific outreach and general discussion on math-related issues.
+  - updates in my research, scientific outreach and general discussion on math-related issues.
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
-google_analytics: # a Google Analytics tracking ID
-custom_head: true
-custom_sidebar: false
-custom_footer: false
-  # generate social links in footer (only available in some themes, e.g. minima)
 baseurl: "" # the subpath of the site, e.g. /blog
 url: "" # the base hostname & protocol for the site, e.g. http://example.com
+  # generate social links in footer (only available in some themes, e.g. minima)
 twitter_username: alba_math
 github_username:  albamath
 
 #collections
 collections:
-  javascript:
+  portfolio:
    output: true
-   permalink: /portfolio/js/:name
+   permalink: /portfolio/:name
   experience:
    output: false
 

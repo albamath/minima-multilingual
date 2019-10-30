@@ -9,7 +9,7 @@ description: >- # this means to ignore newlines until "show_downloads:"
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: "" # the subpath of the site, e.g. /blog
-url: "" # the base hostname & protocol for the site, e.g. http://example.com
+url: "http://albamath.com" # the base hostname & protocol for the site, e.g. http://example.com
   # generate social links in footer (only available in some themes, e.g. minima)
 twitter_username: alba_math
 github_username:  albamath

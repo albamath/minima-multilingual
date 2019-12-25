@@ -15,7 +15,7 @@ url: "http://albamath.com" # the base hostname & protocol for the site, e.g. htt
   # generate social links in footer (only available in some themes, e.g. minima)
 twitter_username: alba_math
 github_username:  albamath
-theme: jekyll-theme-hacker
+theme: jekyll-theme-primer
 # Permalink structure (it includes the category in the output, which is useful because we are naming categories after lang)
 permalink: none
 

@@ -20,7 +20,7 @@
 
       <div class="footer-col one-half">
         {%- assign lang_d = {{ page.lang | default: site.lang }} -%}
-        <p>{{ site.description[lang_d] }}</p>
+        <p>{{- site.description[page.lang] | escape -}}</p>
       </div>
 
       <div class="social-links">

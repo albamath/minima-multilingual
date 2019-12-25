@@ -8,13 +8,18 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-
-  {%- if site.posts.size > 0 -%}
+  {% assign posts=site.posts | where:"lang", page.lang %}
+  {%- if posts -%}
+    {% if page.lang == 'en' %}
+      {%- assign date_format = "%d/%m/%Y" -%}
+    {% endif %}
+    {% if page.lang == 'fr' %}
+      {%- assign date_format = "%Y-%m-%d" -%}
+    {% endif %}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in posts -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">

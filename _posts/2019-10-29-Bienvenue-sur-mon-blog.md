@@ -1,7 +1,7 @@
 ---
 layout: post
 ref: welcome-2019
-title:  "Bienvenue à mon nouveau blog"
+title:  "Bienvenue sur mon blog"
 categories: [fr]
 tags: [personal, website, goals]
 lang: fr
@@ -11,7 +11,7 @@ Je suis mathématicienne, je suis maker, je suis mère, je suis végétarienne, 
 
 ## Qu'est-ce que c'est que ce site ?
 
-J'étais bloggeuse. Après une pause de quelques années, ce site web est un nouveau depart pour mon identité de bloggeuse. Comme d'habitude, je bloggerai surtout à propos de mathématiques.
+J'étais bloggeuse. Après une pause de quelques années, ce site web fait redecoller mon identité de bloggeuse. Comme d'habitude, je bloggerai surtout à propos de mathématiques.
 
 Ce site web contient (ou contiendra) aussi quelques octets d'information utiles:
 - sur moi : un CV, une liste de publications, une liste de projets…

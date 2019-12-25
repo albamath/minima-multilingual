@@ -5,7 +5,7 @@ languages: ["fr", "es", "pl", "en"]
 email: alba@albamath.com
 logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
 author: Alba MÁLAGA
-description:
+description: >-
   en: math research, scientific outreach and other discussion
   fr: recherche en maths, médiation scientifique et autres conversations
   pl: badania matematyczne, popularyzacja naukowa i inne rozmowy

@@ -11,7 +11,7 @@ I am a mathematician, I am a maker, I am a mother, I am vegetarian, I am Polish,
 
 ## What is this website?
 
-I used to be a blogger. After a few years break from blogging, this website is yet another fresh start for my blogger identity. As usual, I'll blog mostly about mathematics. 
+I used to be a blogger. After a few years break from blogging, this is yet another fresh start for my blogger identity. As usual, I'll blog mostly about mathematics. 
 
 This website is (planned to be) also a placeholder for useful bits of information 
 

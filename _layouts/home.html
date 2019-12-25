@@ -9,6 +9,7 @@ layout: default
 
   {{ content }}
   {%- assign posts=site.posts | where:"lang", page.lang -%}
+  {{page.lang}}
   {%- if posts and posts.size > 0 -%}
     {%- if page.lang == 'en' -%}
       {%- assign date_format = "%Y-%m-%d" -%}

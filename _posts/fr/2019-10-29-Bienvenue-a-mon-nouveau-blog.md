@@ -4,7 +4,7 @@ ref: welcome-2019
 title:  "Bienvenue à mon nouveau blog"
 categories: [fr]
 tags: [personal, website, goals]
-lang: en
+lang: fr
 ---
 
 Je suis mathématicienne, je suis maker, je suis mère, je suis végétarienne, je suis polonaise, je suis péruvienne, je suis française et encore, je suis mathématicienne. 

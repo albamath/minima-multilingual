@@ -27,9 +27,17 @@
 
 </header>
 
-{%- assign posts=site.posts | where:"ref", page.ref | sort: 'lang' -%}
-{%- assign pages=site.pages | where:"ref", page.ref | sort: 'lang' -%}
-<div class="wrapper" style="text-align: right; line-height: 2em">
-  {%- for post in posts -%} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {%- endfor -%}
-  {%- for page in pages -%} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {%- endfor -%}
+<div class="wrapper" class="languages" style="text-align: right; line-height: 2em">
+  {%- for l in site.data.languages -%}
+    {%- assign language = l[1] -%}
+    {%- assign posts=site.posts | where:"ref", page.ref | where: "lang", l[0] -%}
+    {%- assign pages=site.pages | where:"ref", page.ref | where: "lang", l[0] -%}
+    {%- if posts.size > 0 or pages.size > 0 }
+      {%- for post in posts -%} <a href="{{ post.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a> {%- endfor -%}
+      {%- for page in pages -%} <a href="{{ page.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a> {%- endfor -%}
+    {%- else -%}
+  <a href="{{ l[0] | absolute_url }}">{{language.icon}}</a>
+    {%- endif -%}
+  &nbsp;
+  {%- endfor -%}
 </div>

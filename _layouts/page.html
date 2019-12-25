@@ -11,9 +11,9 @@ layout: default
   </header>
 
   <div class="post-content">
-    {% for js in page.my_js_code %}
-        <script type="text/javascript">{% include {{ js }} %}</script>
-    {% endfor %}
+    {%- for js in page.my_js_code -%}
+        <script type="text/javascript" src="{{ js | prepend: "assets/js/" | relative_url}}"></script>
+    {%- endfor -%}
     {{ content }}
   </div>
 

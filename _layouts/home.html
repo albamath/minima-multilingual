@@ -12,8 +12,7 @@ layout: default
   {%- if posts -%}
     {% if page.lang == 'en' %}
       {%- assign date_format = "%d/%m/%Y" -%}
-    {% endif %}
-    {% if page.lang == 'fr' %}
+    {% else %}
       {%- assign date_format = "%Y-%m-%d" -%}
     {% endif %}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>

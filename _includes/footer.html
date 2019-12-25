@@ -19,7 +19,7 @@
       </div>
 
       <div class="footer-col one-half">
-        <p>{{ site.description[page.lang] }}</p>
+        <p>{{- site.description[page.lang] | escape -}}</p>
       </div>
 
       <div class="social-links">

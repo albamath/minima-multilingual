@@ -8,13 +8,13 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-  {% assign posts=site.posts | where:"lang", page.lang %}
-  {%- if posts -%}
-    {% if page.lang == 'en' %}
-      {%- assign date_format = "%d/%m/%Y" -%}
-    {% else %}
+  {%- assign posts=site.posts | where:"lang", page.lang -%}
+  {%- if posts and posts.size > 0 -%}
+    {%- if page.lang == 'en' -%}
       {%- assign date_format = "%Y-%m-%d" -%}
-    {% endif %}
+    {%- else -%}
+      {%- assign date_format = "%d/%m/%Y" -%}
+    {%- endif -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in posts -%}

@@ -1,4 +1,4 @@
-description:
+desc:
   en: math research, scientific outreach and more 
   fr: recherche en maths, médiation scientifique et plus  
   pl: badania matematyczne, popularyzacja naukowa i więcej  
@@ -13,12 +13,22 @@ about:
   fr: "À propos"
   pl: "O"
   es: "Acerca de"
-relatedPosts:
+previous:
+  en: "Previous"
+  fr: "Précédent" 
+  es: "Anterior"
+  pl: "Poprzedni"
+next:
+  en: "Next"
+  fr: "Suivant"
+  es: "Siguiente"
+  pl: "Następny"
+related:
   en: "Related Posts"
   es: "Artículos Relacionados"
   fr: "Articles similaires"
   pl: "Podobne zapisy"
-differentLanguage:
+other:
   en: "Read this page in a different language"
   es: "Lea esta página en un idioma diferente"
   fr: "Lisez cette page dans une langue différente"

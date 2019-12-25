@@ -15,7 +15,7 @@
 
       <div class="trigger">
         {% assign pages=site.pages | where:"lang", page.lang %}
-        {% for my_page pages %}
+        {% for my_page in pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {% endif %}
@@ -27,18 +27,9 @@
 
 </header>
 
-{%- if page.ref -%}
+{%- assign posts=site.posts | where:"ref", page.ref | sort: 'lang' -%}
+{%- assign pages=site.pages | where:"ref", page.ref | sort: 'lang' -%}
 <div class="wrapper" style="text-align: right; line-height: 2em">
-  {%- assign posts=site.posts | where:"ref", page.ref | sort: 'lang' -%}
-  {%- assign pages=site.pages | where:"ref", page.ref | sort: 'lang' -%}
-  {%- if posts.size > 0 -%}
-    {%- for post in posts -%} 
- <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> 
-    {%- endfor -%}
-  {%- elsif pages.size > 0 -%}
-    {%- for page in pages -%} 
- <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a>
-    {%- endfor -%}
-  {%- endif -%}
+  {%- for post in posts -%} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {%- endfor -%}
+  {%- for page in pages -%} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {%- endfor -%}
 </div>
-{% endif %}

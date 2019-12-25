@@ -5,9 +5,11 @@ languages: ["fr", "es", "pl", "en"]
 email: alba@albamath.com
 logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
 author: Alba MÁLAGA
-description: >- # this means to ignore newlines until "show_downloads:"
-  Alba Marina MÁLAGA SABOGAL 
-  - math research, scientific outreach and general discussion.
+description:
+  en: math research, scientific outreach and other discussion
+  fr: recherche en maths, médiation scientifique et autres conversations
+  pl: badania matematyczne, popularyzacja naukowa i inne rozmowy
+  es: investigación matemática, divulgación científica y discusión general
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: "" # the subpath of the site, e.g. /blog
@@ -15,6 +17,8 @@ url: "http://albamath.com" # the base hostname & protocol for the site, e.g. htt
   # generate social links in footer (only available in some themes, e.g. minima)
 twitter_username: alba_math
 github_username:  albamath
+disqus:
+  shortname: disqus_3Sof593PnY
 theme: minima
 minima:
   skin: sunrise

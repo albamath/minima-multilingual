@@ -1,15 +1,10 @@
 # Site settings
 title: alba~math
-lang: en 
+lang: fr 
 languages: ["fr", "es", "pl", "en"] 
 email: alba@albamath.com
 logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
 author: Alba MÁLAGA
-description:
-  en: math research, scientific outreach and more  
-  fr: recherche en maths, médiation scientifique et plus  
-  pl: badania matematyczne, popularyzacja naukowa i więcej  
-  es: investigación matemática, divulgación científica y más  
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: "" # the subpath of the site, e.g. /blog

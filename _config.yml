@@ -6,10 +6,10 @@ email: alba@albamath.com
 logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
 author: Alba MÁLAGA
 description:
-  en: math research, scientific outreach and more 
-  fr: recherche en maths, médiation scientifique et plus  
-  pl: badania matematyczne, popularyzacja naukowa i więcej  
-  es: investigación matemática, divulgación científica y más  
+  en: math research, scientific outreach and more&nbsp; 
+  fr: recherche en maths, médiation scientifique et plus&nbsp;  
+  pl: badania matematyczne, popularyzacja naukowa i więcej&nbsp;  
+  es: investigación matemática, divulgación científica y más&nbsp;  
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: "" # the subpath of the site, e.g. /blog
@@ -21,7 +21,7 @@ disqus:
   shortname: disqus_3Sof593PnY
 theme: minima
 minima:
-  skin: sunrise
+  skin: solarized
 # Permalink structure (it includes the category in the output, which is useful because we are naming categories after lang)
 permalink: none
 

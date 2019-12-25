@@ -1,5 +1,7 @@
 # Site settings
 title: alba~math
+lang: fr 
+languages: ["fr", "es", "pl", "en"] 
 email: alba@albamath.com
 logo: /assets/img/cropped-albamath-shaded-logo-small-uncentered-tinified.png
 author: Alba MÁLAGA
@@ -18,7 +20,7 @@ github_username:  albamath
 collections:
   portfolio:
    output: true
-   permalink: /portfolio/:name
+   permalink: /:collection/:name
   experience:
    output: false
 

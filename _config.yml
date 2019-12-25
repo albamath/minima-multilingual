@@ -22,8 +22,5 @@ collections:
   experience:
    output: false
 
-# Build settings
-theme: jekyll-theme-minimal
-
 # Exclude these files from your production _site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

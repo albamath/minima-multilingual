@@ -5,6 +5,6 @@ layout: default
 <ul class="languages">
 {% for lang in site.data.languages %}
 {% assign language = lang[1] %}
-<li><a lang={{lang[0]]}} href="{{site.baseurl}}{{lang[0]}}">{{language.icon}} {{ language.label }}</a></li>
+<li><a lang="{{lang[0]]}}" href="{{site.baseurl}}{{lang[0]}}">{{language.icon}} {{ language.label }}</a></li>
 {% endfor %}
 </ul>

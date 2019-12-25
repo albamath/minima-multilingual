@@ -1,7 +1,7 @@
 ---
 layout: post
 ref: welcome-2019
-title:  "Welcome to my new blog"
+title:  "Welcome to my blog"
 categories: [en]
 tags: [personal, website, goals]
 lang: en

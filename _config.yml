@@ -16,6 +16,8 @@ url: "http://albamath.com" # the base hostname & protocol for the site, e.g. htt
 twitter_username: alba_math
 github_username:  albamath
 theme: minima
+minima:
+  skin: sunrise
 # Permalink structure (it includes the category in the output, which is useful because we are naming categories after lang)
 permalink: none
 

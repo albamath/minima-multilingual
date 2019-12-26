@@ -5,7 +5,7 @@
 {%- if site.theme == "minima" -%}
 @import "minima-{{ site.minima.skin | default: 'classic' }}";
 {%- else -%}
-@import {{ site.theme }}
+@import "{{ site.theme }}"
 {%- endif -%}
 
 .en:lang(en), .fr:lang(fr), .pl:lang(pl), .es:lang(es){

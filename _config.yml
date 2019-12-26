@@ -24,10 +24,7 @@ permalink: none
 collections:
   portfolio:
    output: true
-   permalink: /:collection/:name
-  cv:
-   output: true
-   permalink: /:collection/:name
+   permalink: /:path/:collection/:name
    
 # Exclude these files from your production_site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

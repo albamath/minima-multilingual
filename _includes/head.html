@@ -16,8 +16,8 @@
   {%- for page in pages -%}
   <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
   {%- endfor -%}
-  {%- if page.load_threejs -%}
+  {% if page.load_threejs %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@v0.108.0/examples/js/controls/OrbitControls.js"></script>
-  {%- endif -%}
+  {% endif %}
 </head>

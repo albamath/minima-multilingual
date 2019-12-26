@@ -40,24 +40,7 @@
   <a href="{{ page.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a>
       {%- endfor -%}
     {%- else -%}
-      {%- assign found = false -%}
-      {%- for collection in site.collections -%}
-        {%- if collection.output -%}
-          {%- for item in collection %}
-            {%- if item.ref == page.ref and item.lang == page.lang -%}
-  <a href="{{ item.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a> 
-              {%- assign found = true -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
-        {%- if found -%}
-          {%- break -%}
-        {%- endif -%}
-      {%- endfor -%}
-      {%- if found -%} {%- else -%}
   <a href="{{ l[0] | absolute_url }}">{{language.icon}}</a>
-      {%- endif -%}
     {%- endif -%}
   &nbsp;
   {%- endfor -%}

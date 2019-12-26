@@ -14,7 +14,7 @@ twitter_username: alba_math
 github_username:  albamath
 disqus:
   shortname: disqus_3Sof593PnY
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-hacker
 minima:
   skin: solarized-dark
 # Permalink structure (it includes the category in the output, which is useful because we are naming categories after lang)

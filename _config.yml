@@ -6,8 +6,6 @@ email: email@address.com
 author: Name
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: "/jekyll-minima-multilingual" # the subpath of the site, e.g. /blog
-url: "albamath.com" # the base hostname & protocol for the site, e.g. http://example.com
   # generate social links in footer (only available in some themes, e.g. minima)
 twitter_username: a-twitter-username
 github_username:  a-github-username

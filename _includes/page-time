@@ -1,0 +1,4 @@
+<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+  {% include date.html date=page.date %}
+  {% if page.lang == 'en' %}{{ month }} {{ day }}, {{ year }}{% else %}{{ day }} {{ month }} {{ year }}{% endif %}
+</time>

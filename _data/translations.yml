@@ -33,3 +33,63 @@ other:
   es: "Lea esta página en un idioma diferente"
   fr: "Lisez cette page dans une langue différente"
   pl: "Przeczytaj w innym języku"
+Jan:
+  en: "January"
+  es: "enero"
+  fr: "janvier"
+  pl: "stycznia"
+Feb:
+  en: "February"
+  es: "febrero"
+  fr: "février"
+  pl: "lutego"
+Mar:
+  en: "March"
+  es: "marzo"
+  fr: "mars"
+  pl: "marca"
+Apr:
+  en: "April"
+  es: "abril"
+  fr: "avril"
+  pl: "kwietnia"
+May:
+  en: "May"
+  es: "mayo"
+  fr: "mai"
+  pl: "maja"
+Jun:
+  en: "June"
+  es: "junio"
+  fr: "juin"
+  pl: "czerwca"
+Jul:
+  en: "July"
+  es: "julio"
+  fr: "juillet"
+  pl: "lipca"
+Aug:
+  en: "August"
+  es: "agosto"
+  fr: "août"
+  pl: "sierpnia"
+Sep:
+  en: "September"
+  es: "setiembre"
+  fr: "septembre"
+  pl: "września"
+Oct:
+  en: "October"
+  es: "octubre"
+  fr: "octobre"
+  pl: "października"
+Nov:
+  en: "November"
+  es: "noviembre"
+  fr: "novembre"
+  pl: "listopada"
+Dec:
+  en: "December"
+  es: "diciembre"
+  fr: "décembre"
+  pl: "grudnia"

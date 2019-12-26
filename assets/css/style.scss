@@ -2,7 +2,6 @@
  ---
 
 @import "minima-{{ site.minima.skin | default: 'classic' }}";
-@import "{{ site.theme }}";
 
 .en:lang(en), .fr:lang(fr), .pl:lang(pl), .es:lang(es){
     font-weight: bold;

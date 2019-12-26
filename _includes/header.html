@@ -55,7 +55,7 @@
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
-      {%- if !found -%}
+      {%- if found -%} {%- else -%}
   <a href="{{ l[0] | absolute_url }}">{{language.icon}}</a>
       {%- endif -%}
     {%- endif -%}

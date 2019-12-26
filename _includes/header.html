@@ -27,7 +27,7 @@
 
 </header>
 
-<div class="wrapper" class="languages" style="text-align: right; line-height: 2em">
+<div class="wrapper languages" style="text-align: right; line-height: 2em">
   {%- for l in site.data.languages -%}
     {%- assign language = l[1] -%}
     {%- assign posts=site.posts | where:"ref", page.ref | where: "lang", l[0] -%}

@@ -1,8 +1,3 @@
-/*
-This code started the getting started code sent to me by Yuri Sulyma.
-I started writing it in the setting of the javascript working group during the Illustrating Mathematics program in ICERM.
-My goal is to eventually have here the whole gallery of Herwig Hauser gallery rendered and explorable.
-*/
 var scene = new THREE.Scene();
 scene.background = new THREE.Color( 0xDFDCDA );
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -33,29 +28,17 @@ scene.add( lights[ 1 ] );
 scene.add( lights[ 2 ] );
 scene.add( lights[ 3 ] );
 
-var geometryKolibri = new THREE.ParametricBufferGeometry((u, v, dest) => {
+var geometry = new THREE.ParametricBufferGeometry((u, v, dest) => {
   const s = 2*u-1,
         t = 2*v-1;
   const x = s*(s*s-t*t),
-        y = t,
+        y = t^2,
         z = s*s-t*t;
         dest.set(x, y, z);
 }, 32, 32);
 var material = new THREE.MeshPhongMaterial( { color: 0x00ff00 , side: THREE.DoubleSide} );
-var meshKolibri = new THREE.Mesh( geometryKolibri, material );
-//scene.add( meshKolibri );
-
-var geometryNepali = new THREE.ParametricBufferGeometry((s, t, dest) => {
-  const u = 2*Math.PI*s,
-        v =   Math.PI*(0.000001+t**2);
-  const x = Math.sin(v)*Math.cos(u),
-        y = Math.sin(v)*Math.sin(u),
-        z = Math.cbrt(Math.sin(v)**2*Math.sin(2*u)/2-1+Math.cos(v)**3);
-        dest.set(x, y, z);
-}, 48, 96);
-var materialNepali = new THREE.MeshStandardMaterial( { color: 0x00ff00, side:THREE.DoubleSide } );
-var meshNepali = new THREE.Mesh( geometryNepali, materialNepali );
-scene.add( meshNepali );
+var mesh = new THREE.Mesh( geometry, material );
+scene.add( mesh );
 
 camera.position.z = 5;
 

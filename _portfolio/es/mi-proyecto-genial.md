@@ -5,12 +5,12 @@ title:  "Que proyecto tan genial"
 load_threejs: true
 custom_js: parametric_surface.js
 categories:
-- en
+- es
 tags:
 - outreach
 - javascript
 - portfolio
-lang: en
+lang: es
 ---
 
 ¡Que lindo !

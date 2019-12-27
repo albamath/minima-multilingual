@@ -54,6 +54,7 @@
       {%- unless found -%}
   <a href="{{ l[0] | absolute_url }}">{{language.icon}}</a>
       {%- endunless -%}
+      {{ found }}
     {%- endif -%}
   &nbsp;
   {%- endfor -%}

@@ -29,9 +29,11 @@ scene.add( lights[ 2 ] );
 scene.add( lights[ 3 ] );
 
 var geometry = new THREE.ParametricBufferGeometry((u, v, dest) => {
-  const x = u*v,
-        y = u,
-        z = v^2;
+  const s = 10*u-5,
+        t = 10*v-5;
+  const x = s*t,
+        y = t,
+        z = t^2;
         dest.set(x, y, z);
 }, 32, 32);
 var material = new THREE.MeshPhongMaterial( { color: 0x00ff00 , side: THREE.DoubleSide} );

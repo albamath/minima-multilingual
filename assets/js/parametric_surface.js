@@ -29,8 +29,8 @@ scene.add( lights[ 2 ] );
 scene.add( lights[ 3 ] );
 
 var geometry = new THREE.ParametricBufferGeometry((u, v, dest) => {
-  const s = 10*u-5,
-        t = 10*v-5;
+  const s = u-0.5,
+        t = v-0.5;
   const x = s*t,
         y = t,
         z = t^2;

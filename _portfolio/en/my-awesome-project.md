@@ -3,7 +3,7 @@ layout: page
 ref: awesome-project
 title:  "Such an awesome project"
 load_threejs: true
-my_js_code: parametric_surface.js
+custom_js: parametric_surface.js
 categories:
 - en
 tags:

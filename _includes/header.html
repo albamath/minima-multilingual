@@ -46,7 +46,7 @@
         {%- if docs.size > 0 -%}
           {%- assign found = true -%}
           {%- for doc in docs -%}
-  <a href="{{ page.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a>
+  <a href="{{ doc.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a>
           {%- endfor -%}
           {%- break -%}
         {%- endif -%}
@@ -54,7 +54,6 @@
       {%- unless found -%}
   <a href="{{ l[0] | absolute_url }}">{{language.icon}}</a>
       {%- endunless -%}
-      {{ found }}
     {%- endif -%}
   &nbsp;
   {%- endfor -%}

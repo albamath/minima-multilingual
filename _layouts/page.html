@@ -9,7 +9,7 @@ layout: default
 
   <div class="post-content">
     {{ content }}
-    {%- for js in page.my_js_code -%}
+    {%- for js in page.custom_js -%}
     <script type="text/javascript" src="{{ js | prepend: "assets/js/" | relative_url}}"></script>
     {%- endfor -%}
   </div>

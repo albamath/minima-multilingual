@@ -19,7 +19,7 @@ layout: default
   {%- for post in site.posts -%}
     {%- if post.lang == page.lang -%}
       {%- if prev -%}
-  <a rel="prev" href="{{ post.url }}">{{- site.data.translations['previous'][page.lang] | escape -}}: {{ post.title}}</a>
+  <a rel="prev" href="{{ post.url | absolute_url }}">{{- site.data.translations['previous'][page.lang] | escape -}}: {{ post.title}}</a>
         {%- break -%}
       {%- endif -%}
       {%- assign prev = false -%}
@@ -33,7 +33,7 @@ layout: default
   {%- for post in site.posts reversed -%}
     {%- if post.lang == page.lang -%}
       {%- if next -%}
-  <a rel="next" href="{{ post.url }}">{{- site.data.translations['next'][page.lang] | escape -}}: {{ post.title}}</a>
+  <a rel="next" href="{{ post.url | absolute_url }}">{{- site.data.translations['next'][page.lang] | escape -}}: {{ post.title}}</a>
         {%- break -%}
       {%- endif -%}
       {%- assign next = false -%}

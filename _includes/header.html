@@ -35,10 +35,10 @@
   {%- assign pages=site.pages | where:"ref", page.ref | where: "lang", lnow -%}
   {% if posts.size > 0 or pages.size > 0 %}
     {%- for altpost in posts -%}
-  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpost.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">{{-language.icon-}}</a>
+  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpost.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">:{{-language.alias-}}:</a>
     {%- endfor -%}
     {%- for altpage in pages -%}
-  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpage.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">{{-language.icon-}}</a>
+  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpage.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">:{{-language.alias-}}:</a>
     {%- endfor -%}
   {%- else -%}
     {%- assign found = false -%}
@@ -47,13 +47,13 @@
       {%- if docs.size > 0 -%}
         {%- assign found = true -%}
         {%- for altdoc in docs -%}
-  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altdoc.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">{{-language.icon-}}</a>
+  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altdoc.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">:{{-language.alias-}}:</a>
         {%- endfor -%}
         {%- break -%}
       {%- endif -%}
     {%- endfor -%}
     {%- unless found -%}
-  <a hreflang="{{ lnow }}" aria-label="{{site.data.translations['homein'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" href="{{ lnow | absolute_url }}">{{language.icon}}</a>
+  <a hreflang="{{ lnow }}" aria-label="{{site.data.translations['homein'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" href="{{ lnow | absolute_url }}">:{{language.alias}}:</a>
     {%- endunless -%}
   {%- endif -%}
   &nbsp;

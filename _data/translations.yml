@@ -1,8 +1,8 @@
 description:
-  en: this site is about something  
-  fr: ce site parle de quelque chose  
-  pl: ta strona o czymś jest  
-  es: esta página de algo habla  
+  en: this site is about something
+  fr: ce site parle de quelque chose
+  pl: ta strona o czymś jest
+  es: esta página de algo habla
 home:
   en: "Home"
   fr: "Accueil"
@@ -15,7 +15,7 @@ about:
   es: "Acerca de"
 previous:
   en: "Previous"
-  fr: "Précédent" 
+  fr: "Précédent"
   es: "Anterior"
   pl: "Poprzedni"
 next:
@@ -28,11 +28,36 @@ related:
   es: "Artículos Relacionados"
   fr: "Articles similaires"
   pl: "Podobne zapisy"
-other:
-  en: "Read this page in a different language"
-  es: "Lea esta página en un idioma diferente"
-  fr: "Lisez cette page dans une langue différente"
-  pl: "Przeczytaj w innym języku"
+readthisin:
+  en: "Read this in"
+  es: "Lea esto en"
+  fr: "Lisez ceci en"
+  pl: "Przeczytaj po"
+homein:
+  en: "Home page in"
+  es: "Pagina de inicio en"
+  fr: "Page d'accueil en"
+  pl: "Strona główna po"
+en:
+  en: "English"
+  es: "inglés"
+  fr: "anglais"
+  pl: "angielsku"
+es:
+  en: "Spanish"
+  es: "español"
+  fr: "espagnol"
+  pl: "hiszpańsku"
+fr:
+  en: "French"
+  es: "francés"
+  fr: "français"
+  pl: "francusku"
+pl:
+  en: "Polish"
+  es: "polaco"
+  fr: "polonais"
+  pl: "polsku"
 Jan:
   en: "January"
   es: "enero"

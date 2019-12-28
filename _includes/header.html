@@ -27,34 +27,35 @@
 
 </header>
 
-<div class="wrapper languages" style="text-align: right; line-height: 2em">
-  {%- for l in site.data.languages -%}
-    {%- assign language = l[1] -%}
-    {%- assign posts=site.posts | where:"ref", page.ref | where: "lang", l[0] -%}
-    {%- assign pages=site.pages | where:"ref", page.ref | where: "lang", l[0] -%}
-    {%- if posts.size > 0 or pages.size > 0 -%}
-      {%- for post in posts -%} 
-  <a href="{{ post.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a>
-      {%- endfor -%}
-      {%- for page in pages -%}
-  <a href="{{ page.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a>
-      {%- endfor -%}
-    {%- else -%}
-      {%- assign found = false -%}
-      {%- for collection in site.collections -%}
-        {%- assign docs = collection.docs | where:"ref", page.ref | where: "lang", l[0] -%}
-        {%- if docs.size > 0 -%}
-          {%- assign found = true -%}
-          {%- for doc in docs -%}
-  <a href="{{ doc.url | absolute_url }}" class="{{l[0]}}">{{language.icon}}</a>
-          {%- endfor -%}
-          {%- break -%}
-        {%- endif -%}
-      {%- endfor -%}
-      {%- unless found -%}
-  <a href="{{ l[0] | absolute_url }}">{{language.icon}}</a>
-      {%- endunless -%}
-    {%- endif -%}
+<div class="wrapper languages" style="text-align: right">
+{% for l in site.data.languages %}
+  {%- assign language = l[1] -%}
+  {%- assign lnow = l[0] -%}
+  {%- assign posts=site.posts | where:"ref", page.ref | where: "lang", lnow -%}
+  {%- assign pages=site.pages | where:"ref", page.ref | where: "lang", lnow -%}
+  {% if posts.size > 0 or pages.size > 0 %}
+    {%- for altpost in posts -%}
+  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpost.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">{{-language.icon-}}</a>
+    {%- endfor -%}
+    {%- for altpage in pages -%}
+  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpage.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">{{-language.icon-}}</a>
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign found = false -%}
+    {%- for collection in site.collections -%}
+      {%- assign docs = collection.docs | where:"ref", page.ref | where: "lang", lnow -%}
+      {%- if docs.size > 0 -%}
+        {%- assign found = true -%}
+        {%- for altdoc in docs -%}
+  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altdoc.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">{{-language.icon-}}</a>
+        {%- endfor -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- unless found -%}
+  <a hreflang="{{ lnow }}" aria-label="{{site.data.translations['homein'][page.lang]}} {{site.data.translations[lnow][page.lang]}}" href="{{ lnow | absolute_url }}">{{language.icon}}</a>
+    {%- endunless -%}
+  {%- endif -%}
   &nbsp;
-  {%- endfor -%}
+{% endfor -%}
 </div>

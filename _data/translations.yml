@@ -23,6 +23,11 @@ next:
   fr: "Suivant"
   es: "Siguiente"
   pl: "Następny"
+subscribe:
+  en: "Subscribe"
+  fr: "S'abonner"
+  es: "Suscribirse"
+  pl: "Subskrybować"
 related:
   en: "Related Posts"
   es: "Artículos Relacionados"

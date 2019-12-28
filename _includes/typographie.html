@@ -1,0 +1,28 @@
+{%- assign output = "" -%}
+{%- assign preparts = content | split: '<pre' -%}
+{%- for parts in preparts -%}
+  {%- assign part = parts | split: '</pre>' -%}
+  {%- if part.size == 2 -%}
+    {%- assign inpre = part.first -%}
+    {%- capture output -%}{{ output }}<pre{{ inpre }}</pre>{%- endcapture -%}
+  {%- endif -%}
+  {%- assign nopre = part.last -%}
+  {%- assign codeparts = nopre | split: '<code' -%}
+  {%- for pieces in codeparts -%}
+    {%- assign piece = pieces | split: '</code>' -%}
+    {%- if piece.size == 2 -%}
+      {%- assign incode = piece.first -%}
+      {%- capture output -%}{{ output }}<code{{ incode }}</code>{%- endcapture -%}
+    {%- endif -%}
+    {%- assign t = piece.last -%}
+    {%- assign t = t | replace: '“', '«&#160;'
+                     | replace: '”', '&#160;»'
+                     | replace: ' :', '&#160;:'
+                     | replace: ' %', '&#160;%'
+                     | replace: ' ;', '<span style="white-space:nowrap">&thinsp;</span>;'
+                     | replace: ' !', '<span style="white-space:nowrap">&thinsp;</span>!'
+                     | replace: ' ?', '<span style="white-space:nowrap">&thinsp;</span>?' -%}
+    {%- capture output -%}{{ output }}{{ t }}{%- endcapture -%}
+  {%- endfor -%}
+{%- endfor -%}
+{{ output }}

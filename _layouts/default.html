@@ -9,7 +9,11 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {{ content }}
+        {%- if page.lang == 'fr' -%}
+          {%- include typographie.html -%}
+        {%- else -%}
+          {{ content }}
+        {%- endif -%}
       </div>
     </main>
 

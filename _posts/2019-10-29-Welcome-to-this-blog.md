@@ -21,10 +21,10 @@ Just a basic multilingual website made with Jekyll and the minima theme.
 
 This is (planned to be) a multi-lingual website.
 
-Hopefully also an accessible website. 
+Hopefully also an accessible website.
 
 If you encounter any accessibility issues, please submit an issue or PR.
 
 ## Thanks for your attention
 
-I appreciate it.
+I appreciate it :smiley:.

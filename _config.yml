@@ -1,7 +1,7 @@
 # Site settings
 title: Title
-lang: en 
-languages: ["fr", "es", "pl", "en"] 
+lang: en
+languages: ["fr", "es", "pl", "en"]
 email: email@address.com
 author: Name
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
@@ -11,15 +11,19 @@ twitter_username: a-twitter-username
 github_username:  a-github-username
 theme: minima
 minima:
-  skin: solarized
+  skin: classic
 # Permalink structure (it includes the category in the output, which is useful because we are naming categories after lang)
 permalink: none
+
+#plugins
+plugins:
+  - jemoji
 
 #collections
 collections:
   portfolio:
    output: true
    permalink: :path
-   
+
 # Exclude these files from your production_site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

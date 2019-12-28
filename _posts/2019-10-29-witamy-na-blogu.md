@@ -21,10 +21,10 @@ Po prostu podstawowa wielojezyczna strona stworzona z Jekyllem i minima.
 
 Że to wielojęzyczna strona.
 
-Miejmy nadzieję też że to dostępna strona. 
+Miejmy nadzieję też że to dostępna strona.
 
 Jeśli masz jakiekolwiek kłopoty z dostępnością tej strony, "issue" albo "PR" na githubie będą mile widziane.
 
 ## Dziękuję że to czytasz
 
-Naprawdę
+Naprawdę :smiley:

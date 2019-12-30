@@ -38,13 +38,16 @@
     </p>
     {%- endif -%}
 
-    {%- if doc.citation and doc.paperurl -%}
-      <p>Recommended citation: {{ doc.citation }} <a href="{%- include asset-url.html assetname = doc.dlname -%} "><u>{{ doc.paperurl }}</u></a></p>
+    {%- if doc.dlname -%}
+      {%- capture asseturl -%} {%- include asset-url.html assetname = doc.dlname -%} {%- endcapture -%}
+      {%- if doc.citation -%}
+      <p>Recommended citation: {{ doc.citation }} <a href="{{- asseturl -}}"><u>{{- asseturl -}}</u></a></p>
+      {%- else -%}
+      <p>Download <a href="{{- asseturl -}}"><u>here</u></a></p>
+      {%- endif -%}
     {%- elsif doc.citation -%}
       <p>Recommended citation: {{ doc.citation }} </p>
-    {%- elsif doc.paperurl -%}
-      <p>Download <a href=" {{ doc.paperurl }} "><u>here</u></a></p>
-    {% endif %}
+    {%- endif -%}
 
   </article>
 </div>

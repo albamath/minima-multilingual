@@ -36,7 +36,9 @@
     </p>
       {%- endcapture -%}
       {%- if doc.excerpt and doc.citations and site.show_excerpts -%}
-        {{- publishedin -}}
+        {%- unless doc.excerpt == "" -%}
+          {{- publishedin -}}
+        {%- endunless -%}
       {%- elsif doc.citations -%}{%- else -%}
         {{- publishedin -}}
       {%- endif -%}  

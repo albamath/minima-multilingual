@@ -1,7 +1,6 @@
 ---
 layout: archive
 ref: portfolio
-list: Portfolio
-archive_to_display: 'portfolio'
+list: portfolio
 lang: en
 ---

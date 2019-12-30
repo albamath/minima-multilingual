@@ -2,8 +2,6 @@
 layout: post
 ref: typographiefr
 title:  "La typographie française est respectée ici"
-categories:
-- fr
 tags:
 - website
 lang: fr

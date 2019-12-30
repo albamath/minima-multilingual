@@ -2,8 +2,6 @@
 layout: post
 ref: welcome
 title:  "Welcome to this blog"
-categories:
-- en
 tags:
 - personal
 - website

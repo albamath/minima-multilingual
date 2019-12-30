@@ -43,6 +43,26 @@ homein:
   es: "pagina de inicio en"
   fr: "page d'accueil en"
   pl: "strona główna po"
+download:
+  en: "download"
+  es: "descargar"
+  fr: "télécharger"
+  pl: "pobrać"
+here:
+  en: "here"
+  es: "aqui"
+  fr: "ici"
+  pl: "tutaj"
+citation:
+  en: "bibliographic citation"
+  es: "referencia bibliográfica"
+  fr: "référence bibliographique"
+  pl: "opis bibliograficzny"
+recommended:
+  en: "recommended"
+  es: "aconsejada"
+  fr: "conseillée"
+  pl: "doradzony"
 plsenablejs:
   en: "please enable Javascript"
   es: "por favor, activa Javascript"

@@ -22,7 +22,6 @@
       {%- if page.lang == 'en' -%} {%- assign date_format = "%Y-%m-%d" -%}
       {%- else -%} {%- assign date_format = "%d/%m/%Y" -%} {%- endif -%}
       <span class="post-meta">{{ doc.date | date: date_format }}</span>
-      <a class="post-link" href="{{ doc.url | relative_url }}" rel="permalink">{{ doc.title | escape }}</a>
       {%- endif -%}
       <a class="post-link" href="{{ doc.url | relative_url }}" rel="permalink">{{ doc.title | escape }}</a>
     </h{{- level -}} >

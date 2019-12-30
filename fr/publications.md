@@ -2,7 +2,7 @@
 layout: archive
 title: "Publications"
 ref: publications
-archive_to_display: 'publications'
+list: 'publications'
 reverse_archive: true
 lang: fr
 ---

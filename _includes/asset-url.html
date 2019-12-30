@@ -1,0 +1,7 @@
+{%- unless assetname -%}
+  {%- assign assetname = include.assetname | default: page.assetname -%}
+{%- endunless -%}
+{%- if assetname -%}
+  {%- assign assetfile = site.static_files | where:'name', assetname | first -%}
+  {{- assetfile.path | absolute_url -}}
+{%- endif -%}

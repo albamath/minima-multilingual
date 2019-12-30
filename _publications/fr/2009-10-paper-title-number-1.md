@@ -3,7 +3,7 @@ layout: page
 title: "Paper Title Number 1"
 ref: paper1
 collection: publications
-excerpt: 'This paper is about swimming cows. Flying cows are left for future work.'
+excerpt: 'Cet article parle de vaches qui nagent. Les licornes qui volent seront traitées prochainement.'
 date: 2009-10-01 21:08:01.000000000 +01:00
 venue: 'Journal 1'
 dlname: 'paper1.pdf'

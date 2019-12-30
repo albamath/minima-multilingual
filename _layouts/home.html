@@ -8,7 +8,13 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-
-  {%- include archive-collection.html collection='posts'-%}
+  
+  {%- if page.list == 'posts' -%}
+    {%- assign archive_reverse = true -%}
+  {%- else -%}
+    {%- assign archive_reverse = page.archive_reverse -%}
+  {%- endif -%}
+  
+  {%- include archive-collection.html reverse = archive_reverse -%}
 
 </div>

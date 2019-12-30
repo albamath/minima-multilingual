@@ -36,7 +36,7 @@
     </p>
       {%- endcapture -%}
       {%- if doc.excerpt and doc.citations and site.show_excerpts -%}
-        {%- unless doc.excerpt == blank -%}
+        {%- unless excerpt == empty or excerpt == '' or excerpt == "" or excerpt == -%}
           {{- publishedin -}}
         {%- endunless -%}
       {%- elsif doc.citations -%}{%- else -%}
@@ -45,9 +45,11 @@
     {%- endif -%}
 
     {%- if doc.excerpt and site.show_excerpts -%}
+      {%- unless excerpt == empty or excerpt == '' or excerpt == "" or excerpt == -%}
     <p class="archive__item-excerpt" itemprop="description">
-      {{ doc.excerpt | markdownify }}
+        {{ doc.excerpt | markdownify }}
     </p>
+      {%- endunless -%}
     {%- endif -%}
 
     {%- if doc.dlname -%}

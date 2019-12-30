@@ -1,5 +1,4 @@
 ---
-layout: post
 ref: welcome
 title:  "Witamy na tym blogu"
 tags:

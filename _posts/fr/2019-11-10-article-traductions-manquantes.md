@@ -1,5 +1,4 @@
 ---
-layout: post
 ref: missingtrans
 title:  "Article aux traductions manquantes"
 tags:

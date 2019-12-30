@@ -1,5 +1,4 @@
 ---
-layout: post
 ref: missingtrans
 title:  "Post missing translations"
 tags:

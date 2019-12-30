@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Paper Title Number 2"
 ref: paper2
 collection: publications

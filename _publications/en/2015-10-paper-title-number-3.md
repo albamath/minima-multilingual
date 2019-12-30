@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Paper Title Number 3"
 ref: paper3
 excerpt: 'This paper is about flying unicorns. Walking unicorns are left for future work.'

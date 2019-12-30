@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Paper Title Number 3"
 ref: paper3
 excerpt: 'Cet article parle de licornes qui volent. Les licornes qui marchent seront traitées prochainement.'

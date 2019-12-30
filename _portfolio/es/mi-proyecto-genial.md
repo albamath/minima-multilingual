@@ -1,5 +1,4 @@
 ---
-layout: page
 ref: awesome-project
 title:  "Que proyecto tan genial"
 load_threejs: true

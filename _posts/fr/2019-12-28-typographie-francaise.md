@@ -1,5 +1,4 @@
 ---
-layout: post
 ref: typographiefr
 title:  "La typographie française est respectée ici"
 tags:

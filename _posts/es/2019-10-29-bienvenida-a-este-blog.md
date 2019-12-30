@@ -1,5 +1,4 @@
 ---
-layout: post
 ref: welcome
 title:  "Bienvenida a este blog"
 tags:

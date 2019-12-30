@@ -1,5 +1,4 @@
 ---
-layout: page
 ref: awesome-project
 title:  "Such an awesome project"
 load_threejs: true

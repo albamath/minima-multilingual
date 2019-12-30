@@ -86,6 +86,26 @@ defaults:
       path: pl
     values:
       lang: pl
+  - scope:
+      path: "_publications/fr"
+      type: publications
+    values:
+      lang: fr
+  - scope:
+      path: "_publications/en"
+      type: publications
+    values:
+      lang: en
+  - scope:
+      path: "_publications/es"
+      type: publications
+    values:
+      lang: es
+  - scope:
+      path: "_publications/pl"
+      type: publications
+    values:
+      lang: pl
 
 # Exclude these files from your production_site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

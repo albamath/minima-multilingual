@@ -5,7 +5,6 @@ excerpt: 'Cet article parle de licornes qui volent. Les licornes qui marchent se
 date: 2015-10-01
 venue: 'Journal 1'
 dlname: 'paper3.pdf'
-lang: fr
 ---
 
 Cet article parle de licornes qui volent. Les licornes qui marchent seront traitées prochainement.

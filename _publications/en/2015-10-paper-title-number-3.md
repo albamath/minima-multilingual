@@ -5,7 +5,6 @@ excerpt: 'This paper is about flying unicorns. Walking unicorns are left for fut
 date: 2015-10-01
 venue: 'Journal 1'
 dlname: 'paper3.pdf'
-lang: en
 ---
 
 This paper is about flying unicorns. Walking unicorns are left for future work.

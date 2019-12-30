@@ -106,6 +106,26 @@ defaults:
       type: publications
     values:
       lang: pl
+  - scope:
+      path: "_portfolio/fr"
+      type: portfolio
+    values:
+      lang: fr
+  - scope:
+      path: "_portfolio/en"
+      type: portfolio
+    values:
+      lang: en
+  - scope:
+      path: "_portfolio/es"
+      type: portfolio
+    values:
+      lang: es
+  - scope:
+      path: "_portfolio/pl"
+      type: portfolio
+    values:
+      lang: pl
 
 # Exclude these files from your production_site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

@@ -7,7 +7,6 @@ tags:
 - outreach
 - javascript
 - portfolio
-lang: en
 ---
 
 How nice !

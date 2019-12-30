@@ -1,0 +1,29 @@
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+
+    {% if post.collection == 'teaching' %}
+    <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.collection == 'publications' %}
+    <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% endif %}
+
+    {%- if site.show_excerpts -%}
+    <p class="archive__item-excerpt" itemprop="description">
+      {{ post.excerpt | markdownify }}
+    </p>
+    {% endif %}
+    
+    {% if post.citation and post.paperurl %}
+      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
+    {% elsif post.citation %}
+      <p>Recommended citation: {{ post.citation }} </p>
+    {% elsif post.paperurl %}
+      <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
+    {% endif %}
+
+  </article>
+</div>

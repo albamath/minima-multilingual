@@ -41,12 +41,26 @@
     {%- if doc.dlname -%}
       {%- capture asseturl -%} {%- include asset-url.html assetname = doc.dlname -%} {%- endcapture -%}
       {%- if doc.citation -%}
-      <p>Recommended citation: {{ doc.citation }} <a href="{{- asseturl -}}"><u>{{- asseturl -}}</u></a></p>
+      <p>
+        {{- site.data.translations['suggestedcitation'][page.lang] | capitalize | escape }}
+        {%- if page.lang == 'fr' -%}&nbsp;{%- endif -%}:
+        {{ doc.citation-}}<br>
+        <a href="{{- asseturl -}}">{{- asseturl -}}</a>
+      </p>
       {%- else -%}
-      <p>Download <a href="{{- asseturl -}}"><u>here</u></a></p>
+      <p>
+        {{- site.data.translations['download'][page.lang] | capitalize | escape }}
+        <a href="{{- asseturl -}}">
+          {{- site.data.translations['here'][page.lang] | escape -}}
+        </a>.
+      </p>
       {%- endif -%}
     {%- elsif doc.citation -%}
-      <p>Recommended citation: {{ doc.citation }} </p>
+      <p>
+        {{- site.data.translations['suggestedcitation'][page.lang] | capitalize | escape -}}
+        {%- if page.lang == 'fr' -%}&nbsp;{%- endif -%}:
+        {{ doc.citation -}}
+      </p>
     {%- endif -%}
 
   </article>

@@ -50,19 +50,29 @@ download:
   pl: "pobrać"
 here:
   en: "here"
-  es: "aqui"
+  es: "aquí"
   fr: "ici"
   pl: "tutaj"
-citation:
+bibliocitation:
   en: "bibliographic citation"
   es: "referencia bibliográfica"
   fr: "référence bibliographique"
   pl: "opis bibliograficzny"
+citation:
+  en: "citation"
+  es: "referencia"
+  fr: "référence"
+  pl: "opis"
 recommended:
   en: "recommended"
   es: "aconsejada"
   fr: "conseillée"
   pl: "doradzony"
+suggestedcitation:
+  en: "suggested citation"
+  es: "referencia sugerida"
+  fr: "référence suggérée"
+  pl: "radzony opis"
 plsenablejs:
   en: "please enable Javascript"
   es: "por favor, activa Javascript"

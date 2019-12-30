@@ -70,6 +70,26 @@ defaults:
       path: "*/feed.xml"
     values:
       layout: feed
+  - scope:
+      path: fr
+    values:
+      lang: fr
+  - scope:
+      path: en
+    values:
+      lang: en
+  - scope:
+      path: es
+    values:
+      lang: es
+  - scope:
+      path: pl
+    values:
+      lang: pl
+  - scope:
+      path: "*/en"
+    values:
+      lang: en
 
 # Exclude these files from your production_site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

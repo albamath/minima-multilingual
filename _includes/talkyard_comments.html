@@ -1,0 +1,13 @@
+{%- if page.comments != false and site.talkyard.server_url and jekyll.environment == "production" %}
+<script>talkyardServerUrl='{{ site.talkyard.server_url }}';</script>
+<script async defer src="{{ site.talkyard.script_url }}"></script>
+<!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
+<div class="talkyard-comments" data-discussion-id="{{ page.discussion_id }}" style="margin-top: 45px;">
+  <noscript>
+    {{ site.data.translations['plsenablejs'][page.lang] | capitalize | escape }} {{ site.data.translations['toview'][page.lang] | escape }} {{ site.data.translations['comments'][page.lang] | escape }}.
+  </noscript>
+<p style="margin-top: 25px; opacity: 0.9; font-size: 96%">{{ site.data.translations['comments'][page.lang] | capitalize | escape }} {{ site.data.translations['are'][page.lang] | escape }} {{ site.data.translations['poweredby'][page.lang] | escape }}
+  <a href="https://www.talkyard.io" rel="nofollow">Talkyard</a>.
+</p>
+</div>
+{%- endif -%}

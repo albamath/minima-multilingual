@@ -12,6 +12,13 @@ github_username:  a-github-username
 theme: minima
 minima:
   skin: classic
+# comments : choose a comments engine, and provide the identifiers
+# comments_engine: disqus or talkyard
+disqus:
+  shortname: a-disqus-shortname
+talkyard:
+  server_url: https://comments-for-a-website.talkyard.net
+  script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
 # Permalink structure (it includes the category in the output, which is useful because we are naming categories after lang)
 permalink: none
 

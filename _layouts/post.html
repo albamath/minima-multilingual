@@ -43,8 +43,11 @@ layout: default
     {%- endif -%}
   {%- endfor -%}
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
+  {% if site.comments_engine %}
+    {%- capture comments -%}
+     {{- site.comments_engine -}}_comments.html
+    {%- endcapture -%}
+    {% include {{ comments }} %}
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

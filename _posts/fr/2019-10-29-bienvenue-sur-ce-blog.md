@@ -5,7 +5,6 @@ tags:
 - personal
 - website
 - goals
-lang: fr
 ---
 
 Si je suis celui qui je suis mais je ne suis pas celui qui je suis, qui suis-je ?

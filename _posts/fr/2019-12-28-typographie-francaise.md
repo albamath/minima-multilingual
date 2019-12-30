@@ -3,7 +3,6 @@ ref: typographiefr
 title:  "La typographie française est respectée ici"
 tags:
 - website
-lang: fr
 ---
 
 Une règle typographique à la française : devant les deux points, il y a une espace non sécable.

@@ -5,7 +5,6 @@ tags:
 - personal
 - website
 - goals
-lang: en
 ---
 
 I am who I am.

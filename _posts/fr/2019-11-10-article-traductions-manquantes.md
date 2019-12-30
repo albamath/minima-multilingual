@@ -4,7 +4,6 @@ title:  "Article aux traductions manquantes"
 tags:
 - website
 - test
-lang: fr
 ---
 
 Cet article n'a pas été traduit dans toutes les langues du site.

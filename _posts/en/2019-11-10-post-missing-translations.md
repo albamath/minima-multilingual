@@ -4,7 +4,6 @@ title:  "Post missing translations"
 tags:
 - website
 - test
-lang: en
 ---
 
 This post misses some of its translations.

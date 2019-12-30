@@ -5,7 +5,6 @@ tags:
 - personal
 - website
 - goals
-lang: pl
 ---
 
 Jestem kim jestem.

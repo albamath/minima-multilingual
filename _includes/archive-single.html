@@ -45,8 +45,6 @@
       {%- capture asseturl -%} {%- include asset-url.html assetname = doc.dlname -%} {%- endcapture -%}
       {%- if doc.citation -%}
       <p>
-        {{- site.data.translations['suggestedcitation'][page.lang] | capitalize | escape }}
-        {%- if page.lang == 'fr' -%}&nbsp;{%- endif -%}:
         {{ doc.citation-}}<br>
         <a href="{{- asseturl -}}">{{- asseturl -}}</a>
       </p>
@@ -60,8 +58,6 @@
       {%- endif -%}
     {%- elsif doc.citation -%}
       <p>
-        {{- site.data.translations['suggestedcitation'][page.lang] | capitalize | escape -}}
-        {%- if page.lang == 'fr' -%}&nbsp;{%- endif -%}:
         {{ doc.citation -}}
       </p>
     {%- endif -%}

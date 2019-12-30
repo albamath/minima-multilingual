@@ -29,13 +29,20 @@
     {%- if doc.collection == 'teaching' -%}
     <p> {{ doc.type }}, <i>{{ doc.venue }}</i>, {{ doc.date | default: "1900-01-01" | date: "%Y" }} </p>
     {%- elsif doc.collection == 'publications' %}
+      {%- capture publishedin -%}   
     <p>
-      {{- site.data.translations['publishedin'][doc.lang] | capitalize | escape }}
+        {{- site.data.translations['publishedin'][doc.lang] | capitalize | escape }}
       <i>{{- doc.venue -}}</i>, {{ doc.date | default: "1900-01-01" | date: "%Y" -}}
     </p>
+      {%- endcapture -%}
+      {%- if doc.excerpt and doc.citations and site.show_excerpts -%}
+        {{- publishedin -}}
+      {%- elsif doc.citations -%}{%- else -%}
+        {{- publishedin -}}
+      {%- endif -%}  
     {%- endif -%}
 
-    {%- if site.show_excerpts -%}
+    {%- if doc.excerpt and site.show_excerpts -%}
     <p class="archive__item-excerpt" itemprop="description">
       {{ doc.excerpt | markdownify }}
     </p>

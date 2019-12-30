@@ -9,6 +9,8 @@ layout: default
 
   {{ content }}
 
-  {%- include archive-collection.html -%}
+  {%- assign reverse_archive = page.reverse_archive | default: false -%}
+
+  {%- include archive-collection.html reverse = reverse_archive -%}
 
 </div>

@@ -17,9 +17,16 @@
   <h{{- level }} class="post-list-heading">{{ page.list_title }}</h{{- level -}}>
     {%- assign level = level | plus: 1 -%}
   {%- endif -%}
-  {%- for doc in docs -%}
-    {%- include archive-single.html level = level -%}
-  {%- endfor -%}
+
+  {%- if include.reverse -%}
+    {%- for doc in docs reversed -%}
+      {%- include archive-single.html level = level -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- for doc in docs -%}
+      {%- include archive-single.html level = level -%}
+    {%- endfor -%}
+  {%- endif -%}
   {%- if label == 'posts' -%}
   <p class="feed-subscribe">
     <a href="{{ '/feed.xml' | prepend: page.lang | relative_url }}">

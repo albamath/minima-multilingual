@@ -35,7 +35,7 @@
   {%- assign pages=site.pages | where:"ref", page.ref | where: "lang", lnow -%}
   {% if posts.size > 0 or pages.size > 0 %}
     {%- for altpost in posts -%}
-  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpost.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang] | capitalize}} {{site.data.translations[lnow][page.lang]}}" class="{{lnow}}">:{{-language.alias-}}:</a>
+  <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpost.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang] | capitalize}} {{site.data.translations[lnow][page.lang]}}." class="{{lnow}}">:{{-language.alias-}}:</a>
     {%- endfor -%}
     {%- for altpage in pages -%}
   <a rel="alternate" hreflang="{{ lnow }}" href="{{ altpage.url | absolute_url }}" aria-label="{{site.data.translations['readthisin'][page.lang] | capitalize}} {{site.data.translations[lnow][page.lang]}}." class="{{lnow}}">:{{-language.alias-}}:</a>

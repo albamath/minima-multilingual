@@ -4,40 +4,11 @@ layout: default
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading page__title">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
-  {%- assign posts=site.posts | where:"lang", page.lang -%}
-  {%- if posts.size > 0 -%}
-    {%- if page.lang == 'en' -%}
-      {%- assign date_format = "%Y-%m-%d" -%}
-    {%- else -%}
-      {%- assign date_format = "%d/%m/%Y" -%}
-    {%- endif -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="feed-subscribe">
-      <a href="{{ '/feed.xml' | prepend: page.lang | relative_url }}">
-        <svg class="svg-icon orange"><use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><span>{{site.data.translations['subscribe'][page.lang]}}</span>
-      </a>
-    </p>
-  {%- endif -%}
+  {%- include archive-collection.html -%}
 
 </div>

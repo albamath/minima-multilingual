@@ -1,29 +1,55 @@
-<div class="{{ include.type | default: "list" }}__item">
+{%- assign level = include.level -%}
+
+{%- unless level -%}
+  {%- assign level = 1 -%}
+  {%- if page.title -%}
+    {%- assign level = level | plus: 1 -%}
+  {%- endif -%}
+  {%- if page.list_title -%}
+    {%- assign level = level | plus: 1 -%}
+  {%- endif -%}
+{%- endunless -%}
+
+{%- assign type = include.type | default: 'list' -%}
+{%- if type == 'list' -%}
+<li>
+{%- endif -%}
+
+<div class="{{- type -}}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h{{- level }} class="post-list-heading archive__item-title" itemprop="headline">
+      {%- if doc.collection == 'posts' -%}
+      {%- if page.lang == 'en' -%} {%- assign date_format = "%Y-%m-%d" -%}
+      {%- else -%} {%- assign date_format = "%d/%m/%Y" -%} {%- endif -%}
+      <span class="post-meta">{{ doc.date | date: date_format }}</span>
+      <a class="post-link" href="{{ doc.url | relative_url }}" rel="permalink">{{ doc.title | escape }}</a>
+      {%- endif -%}
+      <a class="post-link" href="{{ doc.url | relative_url }}" rel="permalink">{{ doc.title | escape }}</a>
+    </h{{- level -}} >
 
-    <h2 class="archive__item-title" itemprop="headline">
-        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.title }}</a>
-    </h2>
-
-    {% if post.collection == 'teaching' %}
-    <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.collection == 'publications' %}
-    <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% endif %}
+    {%- if doc.collection == 'teaching' -%}
+    <p> {{ doc.type }}, <i>{{ doc.venue }}</i>, {{ doc.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif doc.collection == 'publications' %}
+    <p>Published in <i>{{ doc.venue }}</i>, {{ doc.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {%- endif -%}
 
     {%- if site.show_excerpts -%}
     <p class="archive__item-excerpt" itemprop="description">
-      {{ post.excerpt | markdownify }}
+      {{ doc.excerpt | markdownify }}
     </p>
-    {% endif %}
-    
-    {% if post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
-    {% elsif post.paperurl %}
-      <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
+    {%- endif -%}
+
+    {%- if doc.citation and doc.paperurl -%}
+      <p>Recommended citation: {{ doc.citation }} <a href="{{ doc.paperurl }}"><u>{{ doc.paperurl }}</u></a></p>
+    {%- elsif doc.citation -%}
+      <p>Recommended citation: {{ doc.citation }} </p>
+    {%- elsif doc.paperurl -%}
+      <p>Download <a href=" {{ doc.paperurl }} "><u>here</u></a></p>
     {% endif %}
 
   </article>
 </div>
+
+{%- if type == 'list' -%}
+</li>
+{%- endif -%}

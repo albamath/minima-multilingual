@@ -29,8 +29,8 @@ plugins:
 #collections
 collections:
   portfolio:
-   output: true
-   permalink: :path
+    output: true
+    permalink: :path
 
 # Exclude these files from your production_site
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']

@@ -1,0 +1,31 @@
+{%- capture label -%}
+  {{- page.archive_to_display | default: include.collection | default: 'posts' -}}
+{%- endcapture -%}
+
+{%- assign collection = site.collections | where:'label', label | first -%}
+
+{%- assign docs = collection.docs | where:"lang", page.lang -%}
+
+{%- assign level = 1 -%}
+{%- if page.title -%}
+  {%- assign level = level | plus: 1 -%}
+{%- endif -%}
+
+{%- if docs.size > 0 -%}
+<ul class="post-list">
+  {%- if page.list_title -%}
+  <h{{- level }} class="post-list-heading">{{ page.list_title }}</h{{- level -}}>
+    {%- assign level = level | plus: 1 -%}
+  {%- endif -%}
+  {%- for doc in docs -%}
+    {%- include archive-single.html level = level -%}
+  {%- endfor -%}
+  {%- if label == 'posts' -%}
+  <p class="feed-subscribe">
+    <a href="{{ '/feed.xml' | prepend: page.lang | relative_url }}">
+      <svg class="svg-icon orange"><use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><span>{{site.data.translations['subscribe'][page.lang]}}</span>
+    </a>
+  </p>
+  {%- endif -%}
+</ul>
+{%- endif -%}

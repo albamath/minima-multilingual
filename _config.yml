@@ -6,12 +6,19 @@ email: email@address.com
 author: Name
 show_downloads: false # "true" or "false" to indicate whether to provide a download URL
 show_excerpts: true # set to true to show excerpts on the homepage
-  # generate social links in footer (only available in some themes, e.g. minima)
+
+# generate social links in footer (only available in some themes, e.g. minima)
 twitter_username: a-twitter-username
 github_username:  a-github-username
+
+# theme
 theme: minima
 minima:
   skin: classic
+
+# Permalink structure
+permalink: :path
+
 # comments : choose a comments engine, and provide the identifiers
 # comments_engine: disqus or talkyard
 disqus:
@@ -19,8 +26,6 @@ disqus:
 talkyard:
   server_url: https://comments-for-a-website.talkyard.net
   script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
-# Permalink structure (it includes the category in the output, which is useful because we are naming categories after lang)
-permalink: none
 
 #plugins
 plugins:

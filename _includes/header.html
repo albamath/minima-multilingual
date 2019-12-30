@@ -53,7 +53,7 @@
       {%- endif -%}
     {%- endfor -%}
     {%- unless found -%}
-  <a hreflang="{{ lnow }}" aria-label="{{site.data.translations['homein'][page.lang] | capitalize }} {{site.data.translations[lnow][page.lang]}}" href="{{ lnow | absolute_url }}.">:{{language.alias}}:</a>
+  <a hreflang="{{ lnow }}" aria-label="{{site.data.translations['homein'][page.lang] | capitalize }} {{site.data.translations[lnow][page.lang]}}." href="{{ lnow | absolute_url }}">:{{language.alias}}:</a>
     {%- endunless -%}
   {%- endif -%}
   &nbsp;

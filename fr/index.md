@@ -1,6 +1,7 @@
 ---
-layout: archive
+layout: home
 ref: index
-lang: fr
-list_title: Articles
+archive_to_display: 'posts'
+list_title: 'Articles'
+lang: en
 ---

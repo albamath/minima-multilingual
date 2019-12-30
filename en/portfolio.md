@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "Portfolio"
 ref: portfolio
 list: portfolio
 lang: en

@@ -28,8 +28,11 @@
 
     {%- if doc.collection == 'teaching' -%}
     <p> {{ doc.type }}, <i>{{ doc.venue }}</i>, {{ doc.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif doc.collection == 'publications' %}
-    <p>Published in <i>{{ doc.venue }}</i>, {{ doc.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {%- elsif doc.collection == 'publications' %}
+    <p>
+      {{- site.data.translations['publishedin'][doc.lang] | capitalize | escape }}
+      <i>{{- doc.venue -}}</i>, {{ doc.date | default: "1900-01-01" | date: "%Y" -}}
+    </p>
     {%- endif -%}
 
     {%- if site.show_excerpts -%}

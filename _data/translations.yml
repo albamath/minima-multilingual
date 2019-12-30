@@ -43,6 +43,11 @@ homein:
   es: "pagina de inicio en"
   fr: "page d'accueil en"
   pl: "strona główna po"
+publishedin:
+  en: "published in"
+  es: "publicado en"
+  fr: "paru dans"
+  pl: "opublikowane w"
 download:
   en: "download"
   es: "descargar"

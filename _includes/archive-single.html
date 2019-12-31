@@ -36,20 +36,16 @@
     </p>
       {%- endcapture -%}
       {%- if doc.excerpt and doc.citations and site.show_excerpts -%}
-        {%- unless doc.excerpt == empty or doc.excerpt == '' or doc.excerpt == "" -%}
-          {{- publishedin -}}
-        {%- endunless -%}
+        {{- publishedin -}}
       {%- elsif doc.citations -%}{%- else -%}
         {{- publishedin -}}
       {%- endif -%}  
     {%- endif -%}
 
     {%- if doc.excerpt and site.show_excerpts -%}
-      {%- unless doc.excerpt == empty or doc.excerpt == '' or doc.excerpt == "" -%}
     <p class="archive__item-excerpt" itemprop="description">
         {{ doc.excerpt | markdownify }}
     </p>
-      {%- endunless -%}
     {%- endif -%}
 
     {%- if doc.dlname -%}
